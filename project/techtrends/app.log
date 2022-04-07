@@ -1,0 +1,75 @@
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2022 10:18:14] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2022 10:18:16] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:The "About Us" page is retrieved
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2022 10:19:54] "GET /about HTTP/1.1" 200 -
+INFO     2022-04-05 10:24:07  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO     2022-04-05 10:24:07  * Restarting with stat
+WARNING  2022-04-05 10:24:07  * Debugger is active!
+INFO     2022-04-05 10:24:07  * Debugger PIN: 320-841-431
+INFO     2022-04-05 10:24:11 The "About Us" page is retrieved
+INFO     2022-04-05 10:24:11 127.0.0.1 - - [05/Apr/2022 10:24:11] "GET /about HTTP/1.1" 200 -
+INFO     2022-04-05 10:24:13 The "About Us" page is retrieved
+INFO     2022-04-05 10:24:13 127.0.0.1 - - [05/Apr/2022 10:24:13] "GET /about HTTP/1.1" 200 -
+INFO     2022-04-05 10:24:13 The "About Us" page is retrieved
+INFO     2022-04-05 10:24:13 127.0.0.1 - - [05/Apr/2022 10:24:13] "GET /about HTTP/1.1" 200 -
+INFO     2022-04-05 10:26:47  * Detected change in '/Users/kagitajagadeesh/Workspace/mohan/kjGitRepo/nd064_course_1/project/techtrends/app.py', reloading
+INFO     2022-04-05 10:26:47  * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 320-841-431
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 320-841-431
+INFO:app:The "About Us" page is retrieved
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2022 10:26:55] "GET /about HTTP/1.1" 200 -
+INFO:app:The "About Us" page is retrieved
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2022 10:27:07] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kagitajagadeesh/Workspace/mohan/kjGitRepo/nd064_course_1/project/techtrends/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 320-841-431
+INFO:werkzeug: * Detected change in '/Users/kagitajagadeesh/Workspace/mohan/kjGitRepo/nd064_course_1/project/techtrends/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING  05/04/2022 10:29:43  * Debugger is active!
+INFO     05/04/2022 10:29:43  * Debugger PIN: 320-841-431
+INFO     05/04/2022 10:29:53  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO     05/04/2022 10:29:53  * Restarting with stat
+WARNING  05/04/2022 10:29:53  * Debugger is active!
+INFO     05/04/2022 10:29:53  * Debugger PIN: 320-841-431
+INFO     05/04/2022 10:29:56 The "About Us" page is retrieved
+INFO     05/04/2022 10:29:56 127.0.0.1 - - [05/Apr/2022 10:29:56] "GET /about HTTP/1.1" 200 -
+INFO     05/04/2022 10:30:20  * Detected change in '/Users/kagitajagadeesh/Workspace/mohan/kjGitRepo/nd064_course_1/project/techtrends/app.py', reloading
+INFO     05/04/2022 10:30:20  * Restarting with stat
+INFO     05/04/2022 10:30:22  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO _internal 05/04/2022 10:35:16  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO app 05/04/2022 10:35:20 The "About Us" page is retrieved
+INFO _internal 05/04/2022 10:35:20 127.0.0.1 - - [05/Apr/2022 10:35:20] "GET /about HTTP/1.1" 200 -
+INFO:_internal:05/04/2022 10:36:36  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:05/04/2022 10:36:54 The "About Us" page is retrieved
+INFO:_internal:05/04/2022 10:36:54 127.0.0.1 - - [05/Apr/2022 10:36:54] "GET /about HTTP/1.1" 200 -
+INFO:app:05/04/2022 10:37:14 The "About Us" page is retrieved
+INFO:_internal:05/04/2022 10:37:14 127.0.0.1 - - [05/Apr/2022 10:37:14] "GET /about HTTP/1.1" 200 -
+INFO:_internal:05/04/2022 10:41:49  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:_internal:05/04/2022 10:41:53 127.0.0.1 - - [05/Apr/2022 10:41:53] "GET / HTTP/1.1" 200 -
+ERROR:app:05/04/2022 10:41:55 Exception on /1 [GET]
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Python/3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 71, in post
+    app.logger.info('Article ' + post.title + 'retrieved!')
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:_internal:05/04/2022 10:41:55 127.0.0.1 - - [05/Apr/2022 10:41:55] "GET /1 HTTP/1.1" 500 -
