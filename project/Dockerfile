@@ -5,8 +5,8 @@ COPY . /techtrends
 WORKDIR /techtrends
 
 RUN pip install -r ./project/techtrends/requirements.txt
-RUN python ./techtrends/init_db.py
+RUN python3 ./init_db.py
 
 EXPOSE 3111
 
-CMD ["python", "./techtrends/app.py"]
+CMD ["python", "app.py"]
