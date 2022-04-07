@@ -9,4 +9,4 @@ RUN python ./project/techtrends/init_db.py
 
 EXPOSE 3111
 
-CMD ["python", "./project/techtrends/app.py"]
+CMD ["python", "./techtrends/app.py"]
