@@ -1,12 +1,12 @@
 FROM python:3.8
 LABEL maintainer="Jagadeesh.K"
 
-COPY . /project/techtrends
-WORKDIR /techtrends
+COPY . /app
+WORKDIR /app
 
 RUN pip install -r ./project/techtrends/requirements.txt
-RUN python3 ./techtrends/init_db.py
+RUN python3 ./project/techtrends/init_db.py
 
 EXPOSE 3111
 
-CMD ["python", "./techtrends/app.py"]
+CMD ["python", "./project/techtrends/app.py"]
