@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3, sys
 
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
@@ -101,10 +101,35 @@ def create():
 
 # start the application on port 3111
 if __name__ == "__main__":
-   logging.basicConfig(
-       #filename='app.log',
-       level=logging.DEBUG,
-       format='%(levelname)s:%(module)s:%(asctime)s %(message)s',
-       datefmt='%d/%m/%Y %H:%M:%S'
-    )
+
+#    logging.basicConfig(
+#        #filename='app.log',
+#        level=logging.DEBUG,
+#        format='%(levelname)s:%(module)s:%(asctime)s %(message)s',
+#        datefmt='%d/%m/%Y %H:%M:%S'
+#     )
+    class StdErrFilter(logging.Filter):
+        def filter(self, rec):
+            return rec.levelno in (logging.ERROR, logging.WARNING)
+
+    class StdOutFilter(logging.Filter):
+        def filter(self, rec):
+            return rec.levelno in (logging.DEBUG, logging.INFO)
+
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logging.DEBUG)
+
+    formatter = logging.Formatter('%(process)s - %(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+    h1 = logging.StreamHandler(sys.stdout)
+    h1.setLevel(logging.DEBUG)
+    h1.setFormatter(formatter)
+    h1.addFilter(StdOutFilter())
+    logger.addHandler(h1)
+
+    h2 = logging.StreamHandler(sys.stderr)
+    h2.setLevel(logging.WARNING)
+    h2.setFormatter(formatter)
+    h2.addFilter(StdErrFilter())
+    logger.addHandler(h2)
    app.run(host='0.0.0.0', port='3111', debug=True)
